@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+:root{
+  --Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body{
+  background-color: var(--Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.advice{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--Dark-Grayish-Blue);
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  width: 50%;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 3px 3px 5px 1px hsla(218, 23%, 16%, 0.813);
+
+}
+
+.advice .advice-header{
+  color: var(--Neon-Green);
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.advice .advice-text{
+  color: var(--Light-Cyan);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.advice .divider{
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+
+.advice button{
+  background-color: var(--Neon-Green);
+  color: var(--Dark-Blue);
+  padding: 1rem 1.2rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -1.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.advice button:hover{
+  transition: all 0.3s ;
+  box-shadow: 0px 0px 15px 3px hsla(150, 91%, 65%, 0.901);
+}
+
+
+/* media query*/
+@media (max-width: 768px){
+  .advice{
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px){
+  .advice{
+    width: 90%;
+  }
+}
+
