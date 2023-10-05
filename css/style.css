@@ -21,7 +21,6 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
 }
 
 .advice{
@@ -39,7 +38,6 @@ body{
   max-width: 500px;
   text-align: center;
   box-shadow: 3px 3px 5px 1px hsla(218, 23%, 16%, 0.813);
-
 }
 
 .advice .advice-header{
@@ -86,6 +84,9 @@ body{
 @media (max-width: 768px){
   .advice{
     width: 80%;
+  }
+  .advice{
+    padding: 2rem 1rem;
   }
 }
 
